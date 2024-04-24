@@ -1,0 +1,27 @@
+{
+  "name": "devblindestick-api",
+  "version": "1.0.0",
+  "description": "BlindStick API.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "author": {
+    "name": "Roberio ALves dos Santos",
+    "GitHub": "https://github.com/RoberioAlves"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "globals": "^15.0.0",
+    "nodemon": "^3.1.0",
+    "sucrase": "^3.35.0"
+  }
+}

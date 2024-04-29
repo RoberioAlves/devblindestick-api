@@ -6,11 +6,11 @@ const routes = new Router()
 routes.get('/', async (request, response) => {
     const user = await User.create({
         id: v4(),
-        name: 'Roberio2',
-        emai: 'roberio2@email.com',
-        password_hash: '12345678',
+        name: 'Pedro22',
+        email: 'Pedro22@gmail.com',
+        password_hash: 'wwqewqeewr3242',
     });
-    
+
     return response.status(201).json(user);
 });
 

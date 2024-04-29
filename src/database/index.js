@@ -1,6 +1,6 @@
 import Sequelize, { Model } from "sequelize";
 
-import configDatabase from '../config/database'
+import configDatabase from '../config/database';
 
 import User from "../App/models/User";
 
@@ -15,6 +15,6 @@ class Database {
         this.connection = new Sequelize(configDatabase);
         models.map((model) => model.init(this.connection));
     }
-}
+};
 
 export default new Database();

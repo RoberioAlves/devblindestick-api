@@ -30,7 +30,7 @@ class UserController {
             })
         }
 
-    const user =await User.create({
+    const user = await User.create({
         id: v4(),
         name,
         email,

@@ -10,6 +10,7 @@ class UserController {
             password: Yup.string().min(6).required(),
             admin: Yup.boolean()
         });
+
         try{
         schema.validateSync(request.body, { abortEarly: false});
     } catch(err) {
@@ -38,7 +39,12 @@ class UserController {
         admin,
         });
 
-        return response.status(201).json(user);
+        return response.status(201).json({
+            id: user.id,
+            name,
+            email,
+            admin,
+        });
     }
 }
 
